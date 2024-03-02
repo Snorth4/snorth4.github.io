@@ -11,6 +11,7 @@
             <h1>
                 Snorth's Guthib Website
             </h1>
+            
             <div>
                 <img src="https://logopng.com.br/logos/facebook-13.png" style="height:30px;width:30px;" usemap="#FacebookMap" alt="Facebook Logo">
                 <map name="FacebookMap">
@@ -73,20 +74,20 @@
                 Your browser does not support the audio element. (mp3)
             </audio>
         </footer>
-    </body>
-    
-    <script>
-        window.onscroll = function() {myFunction()};
         
-        var header = document.getElementById("header");
-        var sticky = header.offsetTop;
-        
-        function myFunction() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("header");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
             }
-        }
-    </script>
+        </script>
+    </body>
 </html>

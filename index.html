@@ -11,6 +11,7 @@
             <h1>
                 Snorth's Guthib Website
             </h1>
+            
             <div>
                 <img src="https://logopng.com.br/logos/facebook-13.png" style="height:30px;width:30px;" usemap="#FacebookMap" alt="Facebook Logo">
                 <map name="FacebookMap">
@@ -26,6 +27,7 @@
                 </map>
             </div>
         </header>
+
         <div>
             <h2>London</h2>
             <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
@@ -37,20 +39,20 @@
         		<button onclick="document.location='https://snorth4.github.io/page2'" target="_blank" target="_blank">Page 2  &gt</button>
         	</div>
         </footer>
-    </body>
-    
-    <script>
-        window.onscroll = function() {myFunction()};
         
-        var header = document.getElementById("header");
-        var sticky = header.offsetTop;
-        
-        function myFunction() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("header");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
             }
-        }
-    </script>
+        </script>
+    </body>
 </html>
