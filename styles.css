@@ -1,51 +1,64 @@
-/* Style the header */
-.header {
-    padding: 10px 16px;
-    background: #ff9595;
-    color: #000000;
-    text-align: center;
-}
-  
-/* Page content */
-.content {
-    padding: 16px;
-}
-  
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%
-}
-  
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-    padding-top: 102px;
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    text-align: center;
-    position: relative;
-    top: 0;
+html,
+body {
     width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
-  
-.navbar a {
-    float: left;
-    display: block;
-    background: #ff7d7d;
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Style the header */
+.header {
+    height: 20vh;
+    background: #ff9595;
+    padding: 1.5rem;
+    position: relative;
     color: #000000;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-  
-.navbar a:hover {
-    background: #ddd;
-    color: black;
-    text-align: center;
+    
+
+    &__nav {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 4rem 5rem;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 100;
+        width: 100%;
+        transition: 0.6s;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 5rem;
+        }
+    }
+
+    &__link {
+        font-size: 1.6rem;
+        color: #00315c;
+        font-weight: 400;
+        text-decoration: none;
+
+        &:hover {
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+    }
 }
