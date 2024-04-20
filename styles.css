@@ -1,14 +1,9 @@
-.main {
-    padding: 16px;
-    margin-top: 30px;
-    height: 1500px; /* Used in this example to enable scrolling */
-}
-
 /* Style the header */
 .header {
     padding: 10px 16px;
     background: #ff9595;
     color: #000000;
+    text-align: center;
 }
   
 /* Page content */
@@ -25,7 +20,7 @@
   
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-    padding-top: 200px;
+    padding-top: 50px;
 }
 
 .navbar {
