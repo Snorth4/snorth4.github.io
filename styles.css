@@ -1,5 +1,4 @@
 html {
-    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
@@ -11,11 +10,30 @@ body {
     overflow-x: hidden;
 }
 
-body {
-    font-family: "Montserrat", sans-serif;
-}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
 
-/* Style the header */
 .header {
     height: 20vh;
     background: #ff9595;
@@ -59,6 +77,7 @@ body {
         &:hover {
             font-weight: 600;
             transition: all 0.3s;
+            background-color: #111111;
         }
     }
 }
